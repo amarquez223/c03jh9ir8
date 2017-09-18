@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table">
+        <tr>
+          <td>Actor / Actress</td>
+          <td>Name</td>
+          <td>Biography</td>
+          <td>Date of birth</td>
+          <td>Place of birth</td>
+          <td>Date of death</td>
+          <td>Place of death</td>
+        </tr>
+        <% @actors.each do |a| %>
+          <tr>
+            <td><img src=<%= a.image_url %> style="width:107px;height:159px;"></td>
+            <td><%= a.name %></td>
+            <td><%= a.bio %></td>
+            <td><%= a.birth_date %></td>
+            <td><%= a.birth_place %></td>
+            <td><%= a.death_date %></td>
+            <td><%= a.death_place %></td>
+          </tr>
+        <% end %>
+      </table>  
+    </div>
+  </div>
+</div>
+
