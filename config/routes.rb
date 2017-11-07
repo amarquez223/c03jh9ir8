@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   get 'actors', to: 'actors#index'
-  get 'actors/new', to: 'actors#new'
+  get 'actors/new', to: 'actors#new', as: "new_actor"
   post 'actors', to: 'actors#create'
 
   # Example of regular route:
