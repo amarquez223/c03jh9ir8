@@ -1,0 +1,26 @@
+<h1>Creación de Nuevo Actor</h1>
+
+<%= form_for @actor do |a| %>
+Nombre:
+<%= a.text_field :name %>
+<br>
+Biografía:
+<%= a.text_area :bio %>
+<br>
+Fecha de Nacimiento:
+<%= a.date_field :birth_date %>
+<br>
+Lugar de Nacimiento:
+<%= a.text_field :birth_place %>
+<br>
+Fecha de Fallecimiento:
+<%= a.date_field :death_date %>
+<br>
+Lugar de Fallecimiento:
+<%= a.text_field :death_place %>
+<br>
+Link de la Foto:
+<%= a.text_field :image_url %>
+<br><br>
+<%= a.submit "Crear Actor" %>
+<% end %>
